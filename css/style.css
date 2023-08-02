@@ -1,11 +1,14 @@
 
-/* GLOBAL */
 :root {
-  --primary: #;
-  --text-color: #;
+  --body-color: #e7e7e7;
+  --bg-blue: #655af2;
+  --red-text: #f03535;
+  --bg-green: #4dc490;
+  --bg-dark-blue: #3a2bf8;
 }
 
 
+/* ----------------GLOBAL --------------------*/
 html {
   box-sizing: border-box;
   height: 100%;
@@ -24,11 +27,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #fff;
+  background-color: var(--body-color);
   color: var(--text-color);
 }
 
@@ -36,36 +39,174 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* -------------------------BUTTONS----------------------------- */
-.button {
-  
-}
 
-/* CONTAINER */
+*:focus {
+  outline: 2px dotted var(--bg-blue);
+  outline-offset: 3px;
+}
+/* ----------------BUTTONS----------- */
+
+
+/* --------------CONTAINER ----------------------*/
 .container {
   width: 100%;
-  max-width: 1100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1192px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
 }
 
-
-/* ------------------------HEADER-------------------------- */
-
+/* -----------------HEADER-------------------- */
 
 
-/* MAIN-CONTENT */
+
+/* --------------MAIN-CONTENT-------------------*/
 .main-content {
   flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-/* ---------------------------HERO-------------------------------- */
+.intro-page {
+  display: flex;
+}
+
+/* --------------------HERO-------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 570px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero__main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 55px 60px;
+  background-color: #222;
+  background-image: url('/img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero__badge {
+  padding: 5px 15px;
+  margin-bottom: 65px;
+  border: 1px solid white;
+  border-radius: 41px;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.hero__heading {
+  padding-right: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 700;
+}
+
+.hero__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.hero__bottom {
+  padding: 28px;
+  text-align: center;
+  font-size: 19px;
+  background-color: var(--bg-green);
+}
+
+
+/* -------------------FORM-------------------- */
+.form {
+  width: 100%;
+  max-width: 570px;
+  padding: 55px 60px 40px;
+  margin-left: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.form__heading2 {
+  margin: 0;
+  margin-bottom: 65px;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+  color: #000;
+}
+
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+
+.form__input {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: 0;
+  border-bottom: 1px solid #555;
+  color: #555;
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__input:focus {
+  border: #000;
+  color: #000;
+  font-weight: 600;
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--bg-blue);
+  cursor: pointer;
+}
+
+.form__info {
+  font-size: 11px;
+  line-height: 15px;
+  color: #555;
+  text-align: center;
+}
+
+.form__info-link {
+  font-weight: 500;
+  color: var(--red-text);
+  text-decoration: none;
+}
 
 
 
-/* -------------------------RETINA DISPLAY------------------------ */
+
+/* ---------------RETINA DISPLAY----- */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),

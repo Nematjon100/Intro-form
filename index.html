@@ -4,30 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apple Watch</title>
+  <title>Intro form</title>
 
-  <!-- ---------------Google Fonts------------------------------>
+  <!-- ---------------Google Fonts--------------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!------------------ STYLESHEETS --------------------------------->
+  <!------------------ STYLESHEETS --------------------->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="container">
-     
-    </div>
+
   </header>
 
 
-  <!------------------ MAIN CONTENT ------------------------->
+  <!------------------ MAIN CONTENT ------------->
   <main class="main-content">
-  
-  </main>
-  <script src="js/main.js"></script>
-</body>
-</html>
+    <div class="container">
+      <div class="intro-page">
+        <!------------ HERO ------------------->
+        <div class="hero">
+          <div class="hero__main">
+            <div class="hero__badge">frontend and backend</div>
+            <h1 class="hero__heading">
+              Learn to program by <br> watching <br> professionals
+            </h1>
+            <p class="hero__text">
+              See how experienced developers solve <br> problems in real time
+            </p>
+          </div>
+          <div class="hero__bottom">
+            <strong>Try it free 7 days</strong>, then $20/month
+          </div>
+        </div>
+
+        <!-------- SIGNUP-FORM -------------------->
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="form__heading2">
+            Sign up for the course and <br> get free 7 days</h2>
+            <div class="form__fields">
+              <input class="form__input" type="text" name="name" placeholder="First Name" aria-label="Name" required>
+              <input class="form__input" type="text" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
+              <input class="form__input" type="email" name="email" placeholder="Email Address" aria-label="Email" required>
+              <input class="form__input" type="password" name="email" placeholder="Password" aria-label="Password" required>
+            </div>
+            <button class="form__button" type="submit">Claim your free trial</button>
+            <div class="form__info">By clicking the button, you are agreeing to our <a class="form__info-link" href="#">Terms and Services</a></div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
