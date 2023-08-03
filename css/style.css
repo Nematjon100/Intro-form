@@ -78,8 +78,6 @@ img {
   flex-direction: column;
   width: 100%;
   max-width: 570px;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #fff;
   border-radius: 20px;
   overflow: hidden;
@@ -171,7 +169,6 @@ img {
 }
 
 .form__input:focus {
-  border: #000;
   color: #000;
   font-weight: 600;
 }
